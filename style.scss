@@ -1,0 +1,94 @@
+$primary: #2f956d;
+$secondary: #2e73b6;
+$tertiary: #6b6b6b;
+body {
+  background-color: #ccc;
+}
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.button {
+  background: transparent;
+  border: 0.2rem solid #2f956d;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  &.primary {
+    background: $primary;
+    color: #fff;
+  }
+  &:hover {
+    opacity: 0.75;
+  }
+}
+header {
+  min-height: 60vh;
+  background-size: cover;
+  background: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-688899881-1519413300.jpg");
+  display: flex;
+  align-items: flex-end;
+}
+
+main {
+  background: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  .intro {
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+  }
+  .intro p {
+    padding-bottom: 3rem;
+    color: $tertiary;
+  }
+  .products {
+    padding-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .product {
+    color: green;
+    padding: 2rem;
+    width: calc(25% - 4rem);
+    text-align: left;
+  }
+  .product img {
+    width: 150px;
+  }
+  .product h2 {
+    color: $secondary;
+  }
+  .product p {
+    color: $tertiary;
+  }
+  .about {
+    justify-content: space-between;
+    display: flex;
+    padding-top: 1rem;
+  }
+  .about img {
+    padding: 1rem;
+    width: 400px;
+  }
+  .about .foto {
+    width: 40%;
+  }
+  .about .info {
+    justify-content: flex-end;
+    margin-right: 2rem;
+    width: 50%;
+  }
+  .about h2 {
+    color: $secondary;
+  }
+  .about p {
+    color: $tertiary;
+  }
+  .info .button {
+    float: right;
+  }
+}
+footer {
+  text-align: center;
+}
